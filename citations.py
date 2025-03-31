@@ -199,13 +199,15 @@ if uploaded_file:
                 selected_case_index = st.selectbox(
                     "Select the most relevant case:", 
                     range(len(case_options)), 
-                    format_func=lambda i: case_options[i]
+                    format_func=lambda i: case_options[i],
+                    key="selectbox_upload"  # For file upload flow
                 )
+
 
                 # Store selected case index in session state
                 st.session_state["selected_case_index"] = selected_case_index
 
-                if st.button("Show Selected Case Details"):
+                if st.button("Show Selected Case Details", key="show_selected_from_upload"):
                     selected_case = cases[st.session_state["selected_case_index"]]
 
                     st.write("### 📌 Selected Case Details")
@@ -237,13 +239,15 @@ if st.button("Search Cases"):
         selected_case_index = st.selectbox(
             "Select the most relevant case:", 
             range(len(case_options)), 
-            format_func=lambda i: case_options[i]
+            format_func=lambda i: case_options[i],
+            key="selectbox_manual"  # For manual citation flow
         )
+
 
         # Store selected case index in session state
         st.session_state["selected_case_index"] = selected_case_index
 
-        if st.button("Show Selected Case Details"):
+        if st.button("Show Selected Case Details", key="show_selected_from_manual"):
             selected_case = cases[st.session_state["selected_case_index"]]
 
             st.write("### 📌 Selected Case Details")
