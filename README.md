@@ -4,6 +4,9 @@ https://www.python.org/downloads/
 Download Git
 https://git-scm.com/downloads
 
+Download Microsoft C++ Build Tools:
+https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
 Run PowerShell as administrator:
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
