@@ -9,10 +9,6 @@ Run PowerShell as administrator:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 ```
 
-Close administrator.
-
-In PowerShell:
-
 ```bash
 git clone https://github.com/srvaught/citation-manager.git
 ```
