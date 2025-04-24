@@ -40,8 +40,4 @@ python -m spacy download en_core_web_sm
 streamlit run citations.py
 ```
 
-```bash
-git clone https://github.com/srvaught/citation-manager.git
-```
-
 URL to visit: http://localhost:8501
