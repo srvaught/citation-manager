@@ -11,7 +11,7 @@ git clone https://github.com/srvaught/citation-manager.git
 ```
 
 ```bash
-cd legal-citation-manager
+cd citation-manager
 ```
 
 ```bash
