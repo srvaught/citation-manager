@@ -4,6 +4,13 @@ https://www.python.org/downloads/
 Download Git
 https://git-scm.com/downloads
 
+Run PowerShell as administrator:
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```
+
+Close administrator.
+
 In PowerShell:
 
 ```bash
