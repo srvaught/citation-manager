@@ -7,7 +7,7 @@ import re
 import docx
 from sentence_transformers import SentenceTransformer
 import pdfplumber
-from fuzzywuzzy import fuzz
+from rapidfuzz import fuzz
 
 def extract_text_from_pdf(pdf_file):
     """
